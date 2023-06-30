@@ -54,7 +54,6 @@ export const Hero = () => {
               <li>Sign up or login</li>
               <li>Create short url</li>
               <li>Generate QR code</li>
-              <li>Share </li>
             </ol>
             <Link
               to={'/login'}

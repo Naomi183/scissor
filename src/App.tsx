@@ -55,7 +55,7 @@ function App() {
                 }
                 subTitle={
                   <p className='text-white md:text-base'>
-                    Sorry, the page you visited does not exist.
+                    Oops, lost your way maybe
                   </p>
                 }
                 extra={
