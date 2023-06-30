@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-dark text-lite bg-[url('./assets/Swirl.png'),_url(./assets/Cubes.png)] md:bg-top bg-no-repeat font-sans;
+}
+
+input {
+  @apply rounded-full appearance-none bg-transparent border-2 border-gray-500 p-2 px-3 mt-3 outline-none placeholder:opacity-30;
+}
+
+.colored-bg {
+  @apply font-bold bg-gradient-radial from-primary to-secondary bg-clip-text text-transparent w-fit;
+}
+
+.btn {
+  @apply rounded-full border-2 px-7 py-2 text-slate-100 cursor-pointer transition ease-in duration-200 hover:bg-opacity-70 hover:shadow-btn disabled:bg-grey-mid disabled:border-grey-mid disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-primary {
+  @apply border-secondary bg-secondary hover:bg-primary disabled:hover:bg-grey-mid hover:border-primary disabled:hover:border-grey-mid;
+}
+
+.auth-form {
+  @apply flex flex-col w-full md:w-2/5 border-2 border-gray-500 px-5 py-10 rounded-lg gap-5 bg-dark;
+}
+
+.copy {
+  @apply cursor-pointer border border-gray-700 p-0.5 w-7 h-7 rounded-full object-contain flex items-center justify-center;
+}
+
+.ant-modal .ant-modal-content {
+  @apply bg-grey-full text-gray-400;
+}
